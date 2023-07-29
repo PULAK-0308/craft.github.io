@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    {% load static%}
+    
 <head>
     <title>Login Page</title>
     <style>
@@ -81,21 +81,14 @@
     
 
     <div class="header">
-        <h1><img src='{% static "lon.jpg" %}' class="header"> </h1>
+        <h1><img src='lon.jpg' class="header"> </h1>
     </div>
 
     <div class="container">
         
         <form class="col-6 mx-auto card p-3 shadow-lg" method="post" enctype="multipart/form-data">
             <h3>Login</h3>
-            {% csrf_token %} 
-            {%if messages%}
-        <div class="alert alert-primary" role="alert">
-            {%for message in messages%}
-            {{message}}
-            {% endfor %}
-        </div>
-        {% endif %}
+            
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Username</label>
             <input type="text"  class="form-control" name="username">
