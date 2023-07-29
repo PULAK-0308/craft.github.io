@@ -21,7 +21,7 @@ from django.conf.urls.static import static
 from craft.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',index,name='index'),
+    path('index',index,name='index'),
     path('register',register,name='register'),
     path('loginuser',loginuser,name='loginuser'),
     path('logoutuser',logoutuser,name='logoutuser'),
