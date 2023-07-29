@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    {%load static%}
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,7 +31,7 @@
         }
 
         body {
-            background-image: url('{%static "/images/peach.jpg"%}');
+            background-image: url('peach.jpg');
             background-size: cover;
             font-family: 'cursive';
             font-size: 1.6rem;
@@ -790,14 +790,14 @@
     <header>
         <nav class="navbar">
             <ul>
-                <li><img src='{%static "/images/lcor.jpg" %}' class="logo"></li>
+                <li><img src='lcor.jpg' class="logo"></li>
                 <li><a href="mainpage">HOME</a></li>
                 <li><a href="dreamcatchers">SHOP</a></li>                
                 <li><a href="gallery">GALLERY</a></li>
                 <li><a href="mainpage">CONTACT US</a> </li>
-                {%if request.user.is_authenticated%}
+                if request.user.is_authenticated
                 <li><a href="logoutuser" class="btn btn-success" type="submit">LOGOUT</a></li>
-                {%endif%}
+                endif
             </ul>
         </nav>
     </header>
@@ -809,9 +809,9 @@
         </div>
         <div class="wer">
 
-            <img src="/static/images/wlo.jpg" class="wlo">
-            <img src='{%static "images/res.jpg" %}' class="res">
-            <img src="/static/DC3.jpg" class="de">
+            <img src="wlo.jpg" class="wlo">
+            <img src='res.jpg' class="res">
+            <img src="DC3.jpg" class="de">
             <p class="cont"><strong>*GIVE A BOHO TOUCH TO YOUR WALLS*<br>
 
                 </strong></p>
@@ -820,11 +820,11 @@
 
     </div>
     <div class="slider-container">
-        <img src='{%static "images/1.jpg"%}' alt="Image 1">
-        <img src='{%static "images/2.jpg"%}' alt="Image 2">
-        <img src='{%static "images/m.jpg"%}' alt="Image 3">
-        <img src='{%static "images/dc.jpg"%}' alt="Image 3">
-        <img src='{%static "images/p.jpg"%}' alt="Image 3">
+        <img src='1.jpg' alt="Image 1">
+        <img src='2.jpg' alt="Image 2">
+        <img src='m.jpg' alt="Image 3">
+        <img src='dc.jpg' alt="Image 3">
+        <img src='p.jpg' alt="Image 3">
 
 
     </div>
@@ -832,19 +832,19 @@
     <section class="section category">
         <div class="cat-center">
             <div class="cat">
-                <img src="./static/images/8.jpg" alt="" />
+                <img src="8.jpg" alt="" />
                 <div>
                     <a href="#" class="wri">DREAMCATCHERS</a>
                 </div>
             </div>
             <div class="cat">
-                <img src="./static/images/a.jpg" alt="" />
+                <img src="a.jpg" alt="" />
                 <div>
                     <a href="#" class="wri">RESIN PRODUCTS</a>
                 </div>
             </div>
             <div class="cat">
-                <img src="./static/images/c.jpg" alt="" />
+                <img src="c.jpg" alt="" />
                 <div>
                     <p> and MORE</p>
                 </div>
@@ -862,7 +862,7 @@
             <div class="product-item">
                 <div class="overlay">
                     <a href="productDetails.html" class="product-thumb">
-                        <img src="./static/images/dc.jpg" alt="" />
+                        <img src="dc.jpg" alt="" />
                     </a>
                 </div>
                 <div class="product-info">
@@ -878,7 +878,7 @@
             <div class="product-item">
                 <div class="overlay">
                     <a href="" class="product-thumb">
-                        <img src="./static/images/dc3.jpg" alt="" />
+                        <img src="dc3.jpg" alt="" />
                     </a>
                     <span class="discount">50%</span>
                 </div>
@@ -914,7 +914,7 @@
             <div class="product-item">
                 <div class="overlay">
                     <a href="" class="product-thumb">
-                        <img src="./static/images/8.jpg" alt="" />
+                        <img src="8.jpg" alt="" />
                     </a>
                     
                 </div>
@@ -931,7 +931,7 @@
             <div class="product-item">
                 <div class="overlay">
                     <a href="" class="product-thumb">
-                        <img src="./static/images/j.jpg" alt="" />
+                        <img src="j.jpg" alt="" />
                     </a>
                 </div>
                 <div class="product-info">
@@ -948,7 +948,7 @@
             <div class="product-item">
                 <div class="overlay">
                     <a href="" class="product-thumb">
-                        <img src='{%static "images/7.jpg"%}' alt="" />
+                        <img src='7.jpg' alt="" />
                     </a>
                 </div>
                 <div class="product-info">
@@ -965,7 +965,7 @@
             <div class="product-item">
                 <div class="overlay">
                     <a href="" class="product-thumb">
-                        <img src='{%static "images/e.jpg"%}' alt="" />
+                        <img src='e.jpg' alt="" />
                     </a>
                     <span class="discount">50%</span>
                 </div>
@@ -983,7 +983,7 @@
             <div class="product-item">
                 <div class="overlay">
                     <a href="" class="product-thumb">
-                        <img src='{%static "images/f.jpg"%}' alt="" />
+                        <img src='f.jpg' alt="" />
                     </a>
                 </div>
                 <div class="product-info">
@@ -1008,7 +1008,7 @@
             <a href="#" class="btn btn-1">Discover Now</a>
         </div>
         <div class="right">
-            <img src='{%static "images/5.jpg"%}' alt="">
+            <img src='5.jpg' alt="">
         </div>
     </section>
     <!-- Contact -->
@@ -1035,9 +1035,9 @@
     <footer class="footer">
         <h2 class="fhead">Our social media handles</h2>
         <div class="d-flex">
-            <a href="https://www.instagram.com/craftcatcher_cc/"><img src='{%static "images/insta.jpg"%}' , alt="Sponsor Image" ,
+            <a href="https://www.instagram.com/craftcatcher_cc/"><img src='insta.jpg' , alt="Sponsor Image" ,
                     class="spImage" /></a>
-            <img src='{%static "images/fb.jpg"%}' , alt="Sponsor Image" , class="spImage" />
+            <img src='fb.jpg' , alt="Sponsor Image" , class="spImage" />
             <div class="part2">
                 <h2> Email id: craftcatchers@gmail.com</h2>
                 <h2> Contact no: +91 1234567890</h2>
